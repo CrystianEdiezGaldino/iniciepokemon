@@ -1,0 +1,38 @@
+name: inicie_pokemon
+description: Aplicativo do processo seletivo INICIE.
+
+publish_to: "none"
+
+version: 1.0.1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter: 
+    sdk: flutter
+
+
+  flutter_modular: ^5.0.3
+  dio: ^4.0.6
+  provider: ^6.0.3
+  flutter_svg: ^1.1.6
+  google_fonts: ^3.0.1
+ 
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/imagens/logo.png
+    - assets/imagens/img_logo.png
+
+
