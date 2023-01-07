@@ -1,9 +1,10 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:flutter_svg/flutter_svg.dart';
-
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +17,8 @@ class SplashScreen extends StatelessWidget {
         width: 150.0,
         height: 150.0,
         // child: Image.asset("assets/imagens/logo.png"),
-        child: SvgPicture.asset(
-          "assets/imagens/logo.svg",
+        child: Image.asset(
+          "assets/imagens/logo.png",
         ),
       ),
     ));
