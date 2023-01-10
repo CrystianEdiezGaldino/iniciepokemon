@@ -2,11 +2,11 @@
 import 'dart:convert';
 
 class ModelPokemon {
-  String? name;
-  String? url;
+  final String name;
+  final String url;
   ModelPokemon({
-    this.name,
-    this.url,
+    required this.name,
+    required this.url,
   });
 
   Map<String, dynamic> toMap() {
@@ -18,8 +18,8 @@ class ModelPokemon {
 
   factory ModelPokemon.fromMap(Map<String, dynamic> map) {
     return ModelPokemon(
-      name: map['name'] != null ? map['name'] as String : null,
-      url: map['url'] != null ? map['url'] as String : null,
+      name: map['name'] != null ? map['name'] as String : "",
+      url: map['url'] != null ? map['url'] as String : "",
     );
   }
 
@@ -27,4 +27,6 @@ class ModelPokemon {
 
   factory ModelPokemon.fromJson(String source) =>
       ModelPokemon.fromMap(json.decode(source) as Map<String, dynamic>);
+
+  fromJson(ModelPokemon modelPokemon) {}
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/btn_start.dart';
 
@@ -25,35 +25,38 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    SvgPicture.asset("assets/imagens/imglogo.svg"),
+                    Image.asset("assets/imagens/img_logo.png"),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: SizedBox(
                         width: MediaQuery.of(context).size.width,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text(
                               "Explore o mundo dos",
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  color: Color.fromARGB(255, 26, 26, 41),
-                                  fontWeight: FontWeight.w600),
+                              style: GoogleFonts.nunito(
+                                  textStyle: const TextStyle(
+                                      fontSize: 35,
+                                      color: Color.fromRGBO(47, 62, 119, 41),
+                                      fontWeight: FontWeight.w700)),
                             ),
                             Text(
                               "Pokémos",
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  color: Color.fromARGB(255, 233, 87, 143),
-                                  fontWeight: FontWeight.w600),
+                              style: GoogleFonts.nunito(
+                                  textStyle: const TextStyle(
+                                      fontSize: 35,
+                                      color: Color.fromARGB(255, 234, 104, 108),
+                                      fontWeight: FontWeight.w700)),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(top: 8.0),
+                              padding: const EdgeInsets.only(top: 8.0),
                               child: Text(
                                 "Descubra todas as espécies de Pokémons",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Color.fromARGB(255, 26, 26, 41),
+                                style: GoogleFonts.nunito(
+                                  textStyle: const TextStyle(
+                                      fontSize: 16,
+                                      color: Color.fromRGBO(47, 62, 119, 41)),
                                 ),
                               ),
                             ),
